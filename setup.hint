@@ -1,0 +1,9 @@
+category: Math
+requires: cygwin glib2 libcln4 libintl8 libqalculate4 libreadline6
+sdesc: "Multi-purpose calculator library (CLI frontend)"
+ldesc: "Qalculate! is a multi-purpose desktop calculator for GNU/Linux. 
+It is small and simple to use but with much power and versatility 
+underneath. Features include customizable functions, units, arbitrary 
+precision, plotting, and a user-friendly interface (KDE or GTK+).
+
+This package contains the backend library and command-line interface."

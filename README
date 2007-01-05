@@ -1,0 +1,300 @@
+libqalculate
+------------------------------------------
+Qalculate! is a multi-purpose desktop calculator for GNU/Linux. It is 
+small and simple to use but with much power and versatility underneath. 
+Features include customizable functions, units, arbitrary precision, 
+plotting, and a user-friendly interface (KDE or GTK+).
+
+This package contains the backend library and command-line interface.
+
+Runtime requirements:
+  cygwin-1.5.23-2
+  glib2-2.12.3-1
+  libcln4-1.1.13-1
+  libintl8-0.15-1
+  libreadline6-5.2.1-4
+  libxml2-2.6.26-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.23-2
+  autoconf2.5-2.60-2
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  cygport-0.2.7-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  pkg-config-0.21-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://qalculate.sourceforge.net/
+
+Canonical download:
+  http://downloads.sourceforge.net/qalculate/
+
+-------------------------------------------
+
+Build instructions:
+  unpack libqalculate-0.9.5-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./libqalculate-0.9.5-X.cygport all
+
+This will create:
+  /usr/src/libqalculate-0.9.5-X-src.tar.bz2
+  /usr/src/libqalculate-0.9.5-X.tar.bz2
+  /usr/src/libqalculate-devel-0.9.5-X.tar.bz2
+  /usr/src/libqalculate-doc-0.9.5-X.tar.bz2
+  /usr/src/libqalculate4-0.9.5-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+(libqalculate)
+  /usr/bin/qalc.exe
+  /usr/share/doc/Cygwin/libqalculate-0.9.5.README
+  /usr/share/doc/libqalculate-0.9.5/AUTHORS
+  /usr/share/doc/libqalculate-0.9.5/COPYING
+  /usr/share/doc/libqalculate-0.9.5/ChangeLog
+  /usr/share/doc/libqalculate-0.9.5/INSTALL
+  /usr/share/doc/libqalculate-0.9.5/NEWS
+  /usr/share/doc/libqalculate-0.9.5/README
+  /usr/share/doc/libqalculate-0.9.5/TODO
+  /usr/share/locale/fr/LC_MESSAGES/libqalculate.mo
+  /usr/share/locale/nl/LC_MESSAGES/libqalculate.mo
+  /usr/share/locale/sv/LC_MESSAGES/libqalculate.mo
+  /usr/share/qalculate/currencies.xml
+  /usr/share/qalculate/datasets.xml
+  /usr/share/qalculate/elements.xml
+  /usr/share/qalculate/functions.xml
+  /usr/share/qalculate/planets.xml
+  /usr/share/qalculate/prefixes.xml
+  /usr/share/qalculate/units.xml
+  /usr/share/qalculate/variables.xml
+
+(libqalculate4)
+  /usr/bin/cygqalculate-4.dll
+
+(libqalculate-devel)
+  /usr/include/libqalculate/BuiltinFunctions.h
+  /usr/include/libqalculate/Calculator.h
+  /usr/include/libqalculate/DataSet.h
+  /usr/include/libqalculate/ExpressionItem.h
+  /usr/include/libqalculate/Function.h
+  /usr/include/libqalculate/MathStructure.h
+  /usr/include/libqalculate/Number.h
+  /usr/include/libqalculate/Prefix.h
+  /usr/include/libqalculate/Unit.h
+  /usr/include/libqalculate/Variable.h
+  /usr/include/libqalculate/includes.h
+  /usr/include/libqalculate/qalculate.h
+  /usr/include/libqalculate/util.h
+  /usr/lib/libqalculate.dll.a
+  /usr/lib/libqalculate.la
+  /usr/lib/pkgconfig/libqalculate.pc
+
+(libqalculate-doc)
+  /usr/share/doc/libqalculate-0.9.5/reference/html/Calculator_8h.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/DataSet_8h.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/ExpressionItem_8h.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/Function_8h.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/MathStructure_8h.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/Number_8h.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/Prefix_8h.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/Unit_8h.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/Variable_8h.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/annotated.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classAliasUnit-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classAliasUnit.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classAliasUnit.png
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classAliasUnit__Composite-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classAliasUnit__Composite.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classAliasUnit__Composite.png
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classArgument-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classArgument.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classArgument.png
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classArgumentSet-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classArgumentSet.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classArgumentSet.png
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classAssumptions-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classAssumptions.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classBinaryPrefix-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classBinaryPrefix.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classBinaryPrefix.png
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classBooleanArgument-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classBooleanArgument.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classBooleanArgument.png
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classCalculator-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classCalculator.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classCalculatorMessage-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classCalculatorMessage.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classCompositeUnit-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classCompositeUnit.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classCompositeUnit.png
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classDataObject-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classDataObject.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classDataObjectArgument-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classDataObjectArgument.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classDataObjectArgument.png
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classDataProperty-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classDataProperty.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classDataPropertyArgument-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classDataPropertyArgument.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classDataPropertyArgument.png
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classDataSet-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classDataSet.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classDataSet.png
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classDateArgument-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classDateArgument.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classDateArgument.png
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classDecimalPrefix-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classDecimalPrefix.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classDecimalPrefix.png
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classDynamicVariable-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classDynamicVariable.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classDynamicVariable.png
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classExpressionItem-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classExpressionItem.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classExpressionItem.png
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classExpressionItemArgument-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classExpressionItemArgument.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classExpressionItemArgument.png
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classFunctionArgument-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classFunctionArgument.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classFunctionArgument.png
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classIntegerArgument-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classIntegerArgument.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classIntegerArgument.png
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classKnownVariable-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classKnownVariable.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classKnownVariable.png
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classMathFunction-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classMathFunction.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classMathFunction.png
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classMathStructure-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classMathStructure.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classMatrixArgument-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classMatrixArgument.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classMatrixArgument.png
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classNumber-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classNumber.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classNumberArgument-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classNumberArgument.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classNumberArgument.png
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classNumberPrefix-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classNumberPrefix.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classNumberPrefix.png
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classPrefix-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classPrefix.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classPrefix.png
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classSymbolicArgument-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classSymbolicArgument.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classSymbolicArgument.png
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classTextArgument-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classTextArgument.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classTextArgument.png
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classUnit-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classUnit.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classUnit.png
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classUnknownVariable-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classUnknownVariable.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classUnknownVariable.png
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classUserFunction-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classUserFunction.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classUserFunction.png
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classVariable-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classVariable.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classVariable.png
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classVectorArgument-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classVectorArgument.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classVectorArgument.png
+  /usr/share/doc/libqalculate-0.9.5/reference/html/classes.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/doxygen.css
+  /usr/share/doc/libqalculate-0.9.5/reference/html/doxygen.png
+  /usr/share/doc/libqalculate-0.9.5/reference/html/files.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_0x62.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_0x63.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_0x64.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_0x65.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_0x66.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_0x67.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_0x68.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_0x69.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_0x6b.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_0x6c.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_0x6d.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_0x6e.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_0x6f.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_0x70.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_0x72.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_0x73.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_0x74.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_0x75.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_0x76.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_0x77.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_0x78.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_0x79.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_0x7a.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_0x7e.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_func.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_func_0x62.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_func_0x63.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_func_0x64.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_func_0x65.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_func_0x66.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_func_0x67.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_func_0x68.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_func_0x69.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_func_0x6b.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_func_0x6c.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_func_0x6d.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_func_0x6e.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_func_0x6f.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_func_0x70.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_func_0x72.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_func_0x73.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_func_0x74.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_func_0x75.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_func_0x76.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_func_0x7a.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_func_0x7e.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/functions_vars.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/globals.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/globals_enum.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/globals_eval.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/globals_vars.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/hierarchy.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/includes_8h.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/index.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/structEvaluationOptions-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/structEvaluationOptions.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/structExpressionName-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/structExpressionName.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/structParseOptions-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/structParseOptions.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/structPlotDataParameters-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/structPlotDataParameters.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/structPlotParameters-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/structPlotParameters.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/structPrintOptions-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/structPrintOptions.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/structSortOptions-members.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/structSortOptions.html
+  /usr/share/doc/libqalculate-0.9.5/reference/html/util_8h.html
+
+------------------
+
+Port Notes:
+
+----- version 0.9.5-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
