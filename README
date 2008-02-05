@@ -8,22 +8,22 @@ plotting, and a user-friendly interface (KDE or GTK+).
 This package contains the backend library and command-line interface.
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  glib2-2.12.12-2
-  libcln4-1.1.13-1
+  cygwin-1.5.25-7
+  glib2-2.14.5-1
+  libcln5-1.2.0-1
   libintl8-0.15-1
-  libreadline6-5.2.4-8
-  libxml2-2.6.26-1
+  libreadline6-5.2.7-9
+  libxml2-2.6.30-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-2
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.3.5-1
-  gawk-3.1.5-4
+  cygport-0.3.7-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
+  intltool-0.36.4-1
   libtool1.5-1.5.23a-2
   make-3.81-1
   pkg-config-0.21-1
@@ -64,12 +64,12 @@ Files included in the binary package:
   /usr/share/doc/libqalculate-0.9.6/NEWS
   /usr/share/doc/libqalculate-0.9.6/README
   /usr/share/doc/libqalculate-0.9.6/TODO
-  /usr/share/locale/fr/LC_MESSAGES/libqalculate.mo
-  /usr/share/locale/nl/LC_MESSAGES/libqalculate.mo
-  /usr/share/locale/sv/LC_MESSAGES/libqalculate.mo
 
 (libqalculate4)
   /usr/bin/cygqalculate-4.dll
+  /usr/share/locale/fr/LC_MESSAGES/libqalculate.mo
+  /usr/share/locale/nl/LC_MESSAGES/libqalculate.mo
+  /usr/share/locale/sv/LC_MESSAGES/libqalculate.mo
   /usr/share/qalculate/currencies.xml
   /usr/share/qalculate/datasets.xml
   /usr/share/qalculate/elements.xml
@@ -288,6 +288,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.9.6-2 -----
+Rebuilt for CLN 1.2.
 
 ----- version 0.9.6-1 -----
 Version bump.

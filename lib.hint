@@ -1,5 +1,5 @@
 category: Math
-requires: cygwin glib2 libcln4 libintl8 libxml2
+requires: cygwin glib2 libcln5 libintl8 libxml2
 external-source: libqalculate
 sdesc: "Multi-purpose calculator library (runtime)"
 ldesc: "Qalculate! is a multi-purpose desktop calculator for GNU/Linux. 
