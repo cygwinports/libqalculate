@@ -1,0 +1,10 @@
+--- origsrc/libqalculate-0.9.7/src/qalc.cc	2010-01-05 09:17:29.000000000 -0600
++++ src/libqalculate-0.9.7/src/qalc.cc	2010-01-23 21:59:40.964568100 -0600
+@@ -14,6 +14,7 @@
+ #include <sys/stat.h>
+ #include <unistd.h>
+ #include <time.h>
++#include <sys/time.h>
+ #include <pthread.h>
+ #include <dirent.h>
+ #include <malloc.h>

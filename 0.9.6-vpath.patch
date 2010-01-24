@@ -1,0 +1,34 @@
+--- origsrc/libqalculate-0.9.6/docs/reference/Makefile.am	2006-06-01 15:14:19.000000000 -0500
++++ src/libqalculate-0.9.6/docs/reference/Makefile.am	2008-02-04 21:22:55.078125000 -0600
+@@ -3,7 +3,7 @@
+ #
+ 
+ referencedir = $(datadir)/doc/$(PACKAGE)-$(VERSION)/reference/html
+-reference_DATA = html/*.png html/*.html html/*.css
++reference_DATA = $(srcdir)/html/*.png $(srcdir)/html/*.html $(srcdir)/html/*.css
+ 
+ EXTRA_DIST = html/*.png html/*.html html/*.css
+ 
+--- origsrc/libqalculate-0.9.6/libqalculate/Makefile.am	2006-05-18 08:37:43.000000000 -0500
++++ src/libqalculate-0.9.6/libqalculate/Makefile.am	2008-02-04 21:22:55.093750000 -0600
+@@ -24,7 +24,7 @@
+ 	@GLIB_LIBS@
+ 
+ INCLUDES = \
+-	-I../ \
++	-I$(top_srcdir) \
+ 	-DPACKAGE_DATA_DIR=\""$(datadir)"\" \
+ 	-DPACKAGE_LOCALE_DIR=\""$(prefix)/$(DATADIRNAME)/locale"\" \
+ 	@GLIB_CFLAGS@
+--- origsrc/libqalculate-0.9.6/src/Makefile.am	2005-10-04 18:13:10.000000000 -0500
++++ src/libqalculate-0.9.6/src/Makefile.am	2008-02-04 21:22:55.093750000 -0600
+@@ -5,7 +5,8 @@
+ INCLUDES = \
+ 	-DPACKAGE_DATA_DIR=\""$(datadir)"\" \
+ 	-DPACKAGE_LOCALE_DIR=\""$(prefix)/$(DATADIRNAME)/locale"\" \
+-	-I../libqalculate \
++	-I$(top_srcdir) \
++	-I$(top_srcdir)/libqalculate \
+ 	@GLIB_CFLAGS@
+ 
+ bin_PROGRAMS = @QALCULATE_TEXT@
