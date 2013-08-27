@@ -1,0 +1,27 @@
+inherit gnome2
+
+NAME="libqalculate"
+VERSION=0.9.7
+RELEASE=2
+CATEGORY="Libs"
+SUMMARY="Multi-purpose calculator library"
+DESCRIPTION="Qalculate! is a multi-purpose desktop calculator for GNU/Linux.
+It is small and simple to use but with much power and versatility underneath.
+Features include customizable functions, units, arbitrary precision, plotting,
+and a user-friendly interface (KDE or GTK+). This package contains the library."
+HOMEPAGE="http://qalculate.sourceforge.net/"
+SRC_URI="mirror://sourceforge/qalculate/${NAME}-${VERSION}.tar.gz"
+PATCH_URI="
+	0.9.6-configure.patch
+	0.9.6-vpath.patch
+	0.9.7-sys-time.h.patch
+"
+
+PKG_NAMES="${NAME} ${NAME}5 ${NAME}-common ${NAME}-devel"
+libqalculate5_REQUIRES="libqalculate-common gnuplot wget"
+libqalculate5_CONTENTS='usr/bin/*-5.dll'
+libqalculate_common_CONTENTS="--exclude=reference usr/share/"
+libqalculate_devel_CONTENTS="usr/include/ usr/lib/ usr/share/doc/${NAME}/reference/"
+PKG_IGNORE="usr/bin/qalc.exe"
+
+MAKEOPTS+=" referencedir=\$(docdir)/reference/html"
